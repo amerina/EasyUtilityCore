@@ -83,6 +83,39 @@ dotnet build
 
 PackageId在 nuget.org必须是唯一的。
 
+**PackageReadmeFile**
+
+打包自述文件时，需要使用 `PackageReadmeFile` 属性相对于包的根目录来指定包路径。 除此之外，还需要确保文件包含在包中。 支持的文件格式仅包括 Markdown (*.md*) 。
+
+```
+<PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+</PropertyGroup>
+
+<ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+</ItemGroup>
+```
+
+**Readme文件包括哪些内容?**
+
+请考虑在自述文件中包含以下各项：
+
+- 介绍包的内容和功能：它可以解决什么问题？
+- 包的使用方法：是否有特定的要求？
+- 如果不包含在自述文件中，则提供更全面的文档。
+- 至少有几个代码片段/示例或示例图像。
+- 提供反馈的方法，如项目问题链接、Twitter、bug 跟踪器或其他平台。
+- 提供方式（如果适用）。
+
+
+
+**打许可证文件**
+
+
+
+
+
 ### 3、构建包
 
 ```

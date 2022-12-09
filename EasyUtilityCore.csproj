@@ -13,6 +13,13 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>ASP.NET Core,Utility Method</PackageTags>
     <Copyright>Amerina</Copyright>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!--确保文件包含在包中-->
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>
