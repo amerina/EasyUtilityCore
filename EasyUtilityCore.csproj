@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <PackageId>EasyUtilityCore</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>wzyandi</Authors>
+    <Company>wzyandi</Company>
+    <Description>Some common extension methods</Description>
+    <RepositoryUrl>https://github.com/amerina/EasyUtilityCore</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/amerina/EasyUtilityCore</PackageProjectUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>ASP.NET Core,Utility Method</PackageTags>
+    <Copyright>Amerina</Copyright>
+  </PropertyGroup>
+
+</Project>
